@@ -1,0 +1,11 @@
+{
+  "_hinweis": "VOR DEM EINSETZEN DIESE ZEILE LOESCHEN. Schema fuer die erzaehlende Ueber-mich-Seite. Verweist mit about auf denselben Person-Knoten, ohne ihn zu beanspruchen. Wichtig: die H1 dieser Seite darf nicht identisch mit der H1 der Grounding Page sein, sonst konkurrieren zwei Seiten um dieselbe Entitaet.",
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "@id": "https://www.example.ch/about/#aboutpage",
+  "url": "https://www.example.ch/about/",
+  "name": "VORNAME NACHNAME: der Weg zu ROLLE",
+  "inLanguage": "de-CH",
+  "about": { "@id": "https://www.example.ch/#person" },
+  "isPartOf": { "@id": "https://www.example.ch/#website" }
+}
