@@ -1,5 +1,5 @@
 {
-  "_hinweis": "VOR DEM EINSETZEN DIESE ZEILE LOESCHEN. Schema fuer die erzaehlende Ueber-mich-Seite. Verweist mit about auf denselben Person-Knoten, ohne ihn zu beanspruchen. Wichtig: die H1 dieser Seite darf nicht identisch mit der H1 der Grounding Page sein, sonst konkurrieren zwei Seiten um dieselbe Entitaet.",
+  "_hinweis": "VOR DEM EINSETZEN DIESE ZEILE LÖSCHEN. Schema für die erzählende Über-mich-Seite. Verweist mit about auf denselben Person-Knoten, ohne ihn zu beanspruchen. Wichtig: die H1 dieser Seite darf nicht identisch mit der H1 der Grounding Page sein, sonst konkurrieren zwei Seiten um dieselbe Entität.",
   "@context": "https://schema.org",
   "@type": "AboutPage",
   "@id": "https://www.example.ch/about/#aboutpage",
