@@ -1,0 +1,80 @@
+# robots.txt Vorlage fuer eine Firmenwebsite, Stand August 2026
+#
+# Zwei Regeln tragen den ganzen Rest:
+# 1. Die Sitemap-Zeile gehoert rein. Ohne sie erfaehrt ein Crawler, der
+#    deine Search Console nicht kennt, nichts von deinen Sitemaps.
+# 2. Retrieval-Bots nicht blocken. Sie holen die Seite, die ein Modell
+#    gerade zitieren will. Wer sie sperrt, verschwindet aus der Antwort.
+#
+# crawl-delay steht bewusst nicht drin: Google unterstuetzt es laut eigener
+# Doku nicht, es ist nicht Teil von RFC 9309, und kein grosser AI-Anbieter
+# dokumentiert Support. Es kostet nur Verwirrung.
+#
+# example.ch ueberall durch die eigene Domain ersetzen.
+
+# --- Alle Crawler -----------------------------------------------------
+
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# --- Retrieval: unbedingt offen lassen --------------------------------
+# Diese Bots holen Seiten, um eine konkrete Nutzerfrage zu beantworten.
+# Ein Block hier kostet direkt Sichtbarkeit in der Antwort.
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+# --- Training: reine Wertentscheidung ---------------------------------
+# GPTBot, ClaudeBot, CCBot, Google-Extended, Applebot-Extended und
+# meta-externalagent sammeln Material fuer Modelltraining. Sie zu sperren
+# bringt keinen Sichtbarkeitsvorteil und kostet auch keinen. Entscheide
+# das nach Haltung, nicht nach Marketingnutzen, und schreib die
+# Entscheidung auf. Standard hier: offen.
+#
+# Wer sperren will, hebt die Auskommentierung auf:
+#
+# User-agent: GPTBot
+# Disallow: /
+#
+# User-agent: ClaudeBot
+# Disallow: /
+#
+# User-agent: CCBot
+# Disallow: /
+#
+# User-agent: Google-Extended
+# Disallow: /
+#
+# User-agent: Applebot-Extended
+# Disallow: /
+#
+# User-agent: meta-externalagent
+# Disallow: /
+
+# --- Sitemap ----------------------------------------------------------
+# Absolute URL, eine Zeile pro Sitemap oder eine Zeile auf den Index.
+
+Sitemap: https://www.example.ch/sitemap_index.xml
