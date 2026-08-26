@@ -1,0 +1,58 @@
+{
+  "_hinweis": "VOR DEM EINSETZEN DIESE ZEILE LOESCHEN. Sitewide-Graph fuer eine Ein-Personen-Marke oder ein kleines Unternehmen. Auf JEDER Seite ausliefern, nicht nur auf der Startseite. Alle example.ch durch die eigene Domain ersetzen, alle Platzhalter in GROSSBUCHSTABEN ausfuellen oder die Zeile loeschen.",
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.example.ch/#person",
+      "name": "VORNAME NACHNAME",
+      "givenName": "VORNAME",
+      "familyName": "NACHNAME",
+      "jobTitle": "ROLLE IN EINEM BEGRIFF",
+      "description": "EIN SATZ, WORTGLEICH ZUR GROUNDING PAGE UND ZU ALLEN PROFILEN.",
+      "url": "https://www.example.ch/fakten/",
+      "image": "https://www.example.ch/pfad/portrait.jpg",
+      "knowsLanguage": ["de", "en"],
+      "worksFor": { "@id": "https://www.example.ch/#organization" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "ORT",
+        "addressRegion": "KANTON",
+        "addressCountry": "CH"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "HOCHSCHULE"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/HANDLE/",
+        "https://github.com/HANDLE",
+        "https://orcid.org/0000-0000-0000-0000"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.example.ch/#organization",
+      "name": "FIRMEN- ODER MARKENNAME",
+      "url": "https://www.example.ch/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.example.ch/pfad/logo.png"
+      },
+      "founder": { "@id": "https://www.example.ch/#person" },
+      "foundingDate": "JJJJ-MM",
+      "areaServed": "CH",
+      "sameAs": [
+        "https://www.linkedin.com/company/HANDLE/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.example.ch/#website",
+      "url": "https://www.example.ch/",
+      "name": "FIRMEN- ODER MARKENNAME",
+      "inLanguage": "de-CH",
+      "publisher": { "@id": "https://www.example.ch/#organization" }
+    }
+  ]
+}
