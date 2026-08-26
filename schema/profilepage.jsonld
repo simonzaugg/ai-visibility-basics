@@ -1,5 +1,5 @@
 {
-  "_hinweis": "VOR DEM EINSETZEN DIESE ZEILE LOESCHEN. Schema fuer die Grounding Page, also die eine Seite, die deine Kernfakten sauber auflistet (Beispiel: /fakten/). Genau EINE Seite bekommt mainEntity auf den Person-Knoten. Die erzaehlende Ueber-mich-Seite bekommt stattdessen AboutPage mit about statt mainEntity, sonst hast du zwei konkurrierende Person-Knoten.",
+  "_hinweis": "VOR DEM EINSETZEN DIESE ZEILE LÖSCHEN. Schema für die Grounding Page, also die eine Seite, die deine Kernfakten sauber auflistet (Beispiel: /fakten/). Genau EINE Seite bekommt mainEntity auf den Person-Knoten. Die erzählende Über-mich-Seite bekommt stattdessen AboutPage mit about statt mainEntity, sonst hast du zwei konkurrierende Person-Knoten.",
   "@context": "https://schema.org",
   "@type": "ProfilePage",
   "@id": "https://www.example.ch/fakten/#profilepage",
