@@ -1,14 +1,14 @@
 # Grounding Page: Vorlage
 
 Eine Grounding Page ist die eine Seite, auf der die Kernfakten zu einer Person
-oder Firma so stehen, dass eine Maschine sie ohne Interpretation uebernehmen
+oder Firma so stehen, dass eine Maschine sie ohne Interpretation übernehmen
 kann. Kein Marketingtext, keine Story, keine Adjektive. Nur Fakten, in kurzen
-Saetzen, mit sprechenden Zwischentiteln.
+Sätzen, mit sprechenden Zwischentiteln.
 
-Warum das ueberhaupt etwas bringt: das einzige kontrollierte Feldexperiment
-dazu (Aggarwal et al., KDD 2024) misst fuer eingefuegte Zitate plus 41 Prozent
-Sichtbarkeit in generierten Antworten, fuer Statistiken plus 33, fuer
-Quellenangaben plus 30, und fuer Keyword-Stuffing praktisch null. Belegte,
+Warum das überhaupt etwas bringt: das einzige kontrollierte Feldexperiment
+dazu (Aggarwal et al., KDD 2024) misst für eingefügte Zitate plus 41 Prozent
+Sichtbarkeit in generierten Antworten, für Statistiken plus 33, für
+Quellenangaben plus 30, und für Keyword-Stuffing praktisch null. Belegte,
 zitierbare Aussagen schlagen Suchmaschinensprache.
 
 ## Regeln
@@ -16,20 +16,20 @@ zitierbare Aussagen schlagen Suchmaschinensprache.
 1. **Eine Seite, ein Ort.** Nicht auf drei Seiten verteilen. Alles andere
    verlinkt hierhin.
 2. **Wortgleichheit.** Der Beschreibungssatz auf dieser Seite ist derselbe wie
-   auf LinkedIn, GitHub, im Schema und in jedem Profil. Fuenf konsistente
-   Profile schlagen achtzehn widerspruechliche.
+   auf LinkedIn, GitHub, im Schema und in jedem Profil. Fünf konsistente
+   Profile schlagen achtzehn widersprüchliche.
 3. **Zwischentitel mit Namen drin.** "Simon Zaugg: Kernfakten" statt "Fakten".
-   Ein Modell, das nur einen Abschnitt zieht, hat dann trotzdem die Entitaet.
+   Ein Modell, das nur einen Abschnitt zieht, hat dann trotzdem die Entität.
 4. **Datum sichtbar.** Stand des letzten Updates auf die Seite, und
    `dateModified` ins Schema.
-5. **Serverseitig gerendert.** AI-Crawler fuehren kein JavaScript aus
-   (Vercel/Merj, 2025). Was erst im Browser entsteht, existiert fuer sie nicht.
-6. **Intern verlinkt.** Eine Seite ohne interne Links ist fuer Crawler eine
+5. **Serverseitig gerendert.** AI-Crawler führen kein JavaScript aus
+   (Vercel/Merj, 2025). Was erst im Browser entsteht, existiert für sie nicht.
+6. **Intern verlinkt.** Eine Seite ohne interne Links ist für Crawler eine
    Sackgasse, egal wie gut sie ist.
 7. **Abgrenzung nicht vergessen.** Ein Abschnitt "Nicht zu verwechseln mit"
-   raeumt Namensvettern und doppeldeutige Berufsbezeichnungen ab.
+   räumt Namensvettern und doppeldeutige Berufsbezeichnungen ab.
 
-## Geruest zum Kopieren
+## Gerüst zum Kopieren
 
     # VORNAME NACHNAME
 
@@ -38,7 +38,7 @@ zitierbare Aussagen schlagen Suchmaschinensprache.
 
     ## VORNAME NACHNAME: Kernfakten
 
-    Entitaetstyp: Person
+    Entitätstyp: Person
     Name:
     Rolle:
     Marke oder Firma:
@@ -48,7 +48,7 @@ zitierbare Aussagen schlagen Suchmaschinensprache.
     Fachgebiete:
     Eigene Formate:
     Ausbildung:
-    Taetig seit:
+    Tätig seit:
     Status: aktiv
 
     ## VORNAME NACHNAME: Beruflicher Hintergrund
@@ -58,20 +58,20 @@ zitierbare Aussagen schlagen Suchmaschinensprache.
 
     ## VORNAME NACHNAME: Eigene Formate und Projekte
 
-    Pro Format: Name fett, ein bis zwei Saetze was es ist, und wo es liegt.
+    Pro Format: Name fett, ein bis zwei Sätze was es ist, und wo es liegt.
 
     ## VORNAME NACHNAME: Publikationen und Auftritte
 
     Wo der Name ausserhalb der eigenen Website steht. Auch dann, wenn dort
-    kein Link auf dich zeigt: die reine Erwaehnung ist das Signal.
+    kein Link auf dich zeigt: die reine Erwähnung ist das Signal.
 
     ## Nicht zu verwechseln mit
 
-    Namensvettern, aehnliche Marken, doppeldeutige Berufsbezeichnungen.
+    Namensvettern, ähnliche Marken, doppeldeutige Berufsbezeichnungen.
 
 ## Danach
 
 Die Seite bekommt `ProfilePage` mit `mainEntity` auf den Person-Knoten
-(siehe `schema/profilepage.jsonld`). Die erzaehlende Ueber-mich-Seite bekommt
+(siehe `schema/profilepage.jsonld`). Die erzählende Über-mich-Seite bekommt
 `AboutPage` mit `about`. Wenn beide `mainEntity` haben, konkurrieren zwei
-Seiten um dieselbe Entitaet und keine gewinnt.
+Seiten um dieselbe Entität und keine gewinnt.
