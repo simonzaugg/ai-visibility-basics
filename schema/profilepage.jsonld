@@ -1,0 +1,12 @@
+{
+  "_hinweis": "VOR DEM EINSETZEN DIESE ZEILE LOESCHEN. Schema fuer die Grounding Page, also die eine Seite, die deine Kernfakten sauber auflistet (Beispiel: /fakten/). Genau EINE Seite bekommt mainEntity auf den Person-Knoten. Die erzaehlende Ueber-mich-Seite bekommt stattdessen AboutPage mit about statt mainEntity, sonst hast du zwei konkurrierende Person-Knoten.",
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://www.example.ch/fakten/#profilepage",
+  "url": "https://www.example.ch/fakten/",
+  "name": "VORNAME NACHNAME: Kernfakten",
+  "inLanguage": "de-CH",
+  "dateModified": "JJJJ-MM-TT",
+  "mainEntity": { "@id": "https://www.example.ch/#person" },
+  "isPartOf": { "@id": "https://www.example.ch/#website" }
+}
