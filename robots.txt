@@ -1,16 +1,16 @@
-# robots.txt Vorlage fuer eine Firmenwebsite, Stand August 2026
+# robots.txt Vorlage für eine Firmenwebsite, Stand August 2026
 #
 # Zwei Regeln tragen den ganzen Rest:
-# 1. Die Sitemap-Zeile gehoert rein. Ohne sie erfaehrt ein Crawler, der
+# 1. Die Sitemap-Zeile gehört rein. Ohne sie erfährt ein Crawler, der
 #    deine Search Console nicht kennt, nichts von deinen Sitemaps.
 # 2. Retrieval-Bots nicht blocken. Sie holen die Seite, die ein Modell
 #    gerade zitieren will. Wer sie sperrt, verschwindet aus der Antwort.
 #
-# crawl-delay steht bewusst nicht drin: Google unterstuetzt es laut eigener
+# crawl-delay steht bewusst nicht drin: Google unterstützt es laut eigener
 # Doku nicht, es ist nicht Teil von RFC 9309, und kein grosser AI-Anbieter
 # dokumentiert Support. Es kostet nur Verwirrung.
 #
-# example.ch ueberall durch die eigene Domain ersetzen.
+# example.ch überall durch die eigene Domain ersetzen.
 
 # --- Alle Crawler -----------------------------------------------------
 
@@ -49,7 +49,7 @@ Allow: /
 
 # --- Training: reine Wertentscheidung ---------------------------------
 # GPTBot, ClaudeBot, CCBot, Google-Extended, Applebot-Extended und
-# meta-externalagent sammeln Material fuer Modelltraining. Sie zu sperren
+# meta-externalagent sammeln Material für Modelltraining. Sie zu sperren
 # bringt keinen Sichtbarkeitsvorteil und kostet auch keinen. Entscheide
 # das nach Haltung, nicht nach Marketingnutzen, und schreib die
 # Entscheidung auf. Standard hier: offen.
