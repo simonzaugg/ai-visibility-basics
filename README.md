@@ -16,6 +16,7 @@ Platzhalter ersetzen, fertig.
 | `schema/profilepage.jsonld` | Schema für die Grounding Page, die eine Seite mit `mainEntity` |
 | `schema/aboutpage.jsonld` | Schema für die erzählende Über-mich-Seite, mit `about` statt `mainEntity` |
 | `grounding-page-vorlage.md` | Aufbau und Regeln für die Faktenseite, mit Gerüst zum Kopieren |
+| `llms.txt` | Vorlage für Entwickler- und API-Dokumentation, siehe «Mit Vorbehalt drin» |
 
 ## Die Checkliste
 
@@ -58,15 +59,25 @@ Webmaster Tools ansehen, und die eigene Marke plus den eigenen Namen in
 ChatGPT, Gemini, Copilot und Perplexity abfragen. Das Ergebnis vor der Arbeit
 notieren, sonst hast du später keinen Vorher-Wert.
 
-## Was bewusst nicht drin ist
+## Mit Vorbehalt drin
 
 **llms.txt.** Ahrefs hat den Traffic von 137'210 Domains im Mai 2026
 ausgewertet. 38'360 davon hatten eine llms.txt, und 97 Prozent dieser Dateien
 wurden im ganzen Monat kein einziges Mal abgerufen. Slackbot holte sie öfter
-als PerplexityBot. Für eine klassische Firmenwebsite ist sie deshalb höchstens
-ein Experiment. Anders bei Entwickler- und API-Dokumentation: Dort lohnt sie
-sich eher, weil Coding-Agenten sauberes Markdown brauchen. Anthropic, Stripe,
-Cloudflare und Vercel machen es so.
+als PerplexityBot. Als Sichtbarkeitsmassnahme für eine Firmenwebsite taugt sie
+deshalb nicht.
+
+Die Vorlage liegt trotzdem hier, für einen bestimmten Fall: Entwickler- und
+API-Dokumentation. Coding-Agenten brauchen sauberes Markdown, und Doku steckt
+sonst oft hinter JavaScript und Navigation. Anthropic, Stripe, Cloudflare und
+Vercel führen eine llms.txt für ihre Doku.
+
+Wer eine klassische Firmenwebsite betreibt und sie trotzdem anlegt, sollte
+sie als Messobjekt behandeln: Abrufe in den Server-Logs zählen und das
+Ergebnis notieren. So weisst du nach einem Monat, ob sie bei dir überhaupt
+jemand liest.
+
+## Was bewusst nicht drin ist
 
 **FAQPage-Schema.** Google zeigt seit dem 7. Mai 2026 keine FAQ-Rich-Results
 mehr. Das Markup schadet nicht, bringt bei Google aber sichtbar nichts mehr.
@@ -101,6 +112,7 @@ Datenlage nicht.
 ## Quellen
 
 - Ahrefs, llms.txt-Logfilestudie: https://ahrefs.com/blog/llmstxt-study/
+- llms.txt-Vorschlag (Jeremy Howard): https://llmstxt.org/
 - Ahrefs, Korrelationen zu AI Overviews: https://ahrefs.com/blog/ai-overview-brand-correlation/
 - Aggarwal et al., Generative Engine Optimization, KDD 2024: https://arxiv.org/abs/2311.09735
 - Ahrefs, Schema und AI-Zitate (Mai 2026): https://ahrefs.com/blog/schema-ai-citations/
