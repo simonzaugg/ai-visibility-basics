@@ -60,18 +60,25 @@ notieren, sonst hast du später keinen Vorher-Wert.
 
 ## Was bewusst nicht drin ist
 
-**llms.txt.** Ahrefs hat im Mai 2026 137'210 Domains ausgewertet: 97 Prozent
-der llms.txt-Dateien wurden in einem Monat kein einziges Mal abgerufen.
-Slackbot holte sie öfter als PerplexityBot. Wer sie anlegt, sollte das als
-Experiment verbuchen, nicht als Massnahme.
+**llms.txt.** Ahrefs hat den Traffic von 137'210 Domains im Mai 2026
+ausgewertet. 38'360 davon hatten eine llms.txt, und 97 Prozent dieser Dateien
+wurden im ganzen Monat kein einziges Mal abgerufen. Slackbot holte sie öfter
+als PerplexityBot. Für eine klassische Firmenwebsite ist sie deshalb höchstens
+ein Experiment. Anders bei Entwickler- und API-Dokumentation: Dort lohnt sie
+sich eher, weil Coding-Agenten sauberes Markdown brauchen. Anthropic, Stripe,
+Cloudflare und Vercel machen es so.
 
-**FAQPage-Schema.** Google hat die FAQ-Rich-Results im Mai 2026 entfernt. Der
-Inhalt in Frage-Antwort-Form bleibt wertvoll, das Markup bringt nichts mehr.
+**FAQPage-Schema.** Google zeigt seit dem 7. Mai 2026 keine FAQ-Rich-Results
+mehr. Das Markup schadet nicht, bringt bei Google aber sichtbar nichts mehr.
+Inhalt in Frage-Antwort-Form bleibt wertvoll.
 
-**speakable.** Seit Einführung Beta und auf News-Publisher beschränkt.
+**speakable.** Bei Google weiterhin Beta und nur für englischsprachige Inhalte
+auf Google-Home-Geräten in den USA. Für eine Website im DACH-Raum ohne Wirkung.
 
-**Keyword-Stuffing.** Im einzigen kontrollierten Feldexperiment dazu (KDD 2024)
-liegt der Effekt auf Sichtbarkeit in generierten Antworten bei praktisch null.
+**Keyword-Stuffing.** In der GEO-Studie von Aggarwal et al. (KDD 2024) schnitt
+Keyword-Stuffing auf dem Testbenchmark leicht schlechter ab als gar keine
+Optimierung. Statistiken, Zitate und Quellenangaben brachten dort 30 bis 40
+Prozent mehr Sichtbarkeit.
 
 ## Der ehrliche Rahmen
 
@@ -85,11 +92,20 @@ deiner Website. Es steht auf anderen Websites. Diese Checkliste sorgt nur
 dafür, dass die Signale von aussen auf der richtigen Entität landen und nicht
 bei deinem Namensvetter. Das ist notwendig und es ist nicht hinreichend.
 
+Das gilt auch für die Schema-Vorlagen. Ahrefs hat 1'885 Seiten, die neu
+JSON-LD bekamen, mit 4'000 Kontrollseiten verglichen: bei AI Overviews minus
+4,6 Prozent, bei AI Mode und ChatGPT kein signifikanter Effekt. Schema hilft,
+deine Entität sauber zuzuordnen. Mehr Zitate bringt es nach heutiger
+Datenlage nicht.
+
 ## Quellen
 
 - Ahrefs, llms.txt-Logfilestudie: https://ahrefs.com/blog/llmstxt-study/
 - Ahrefs, Korrelationen zu AI Overviews: https://ahrefs.com/blog/ai-overview-brand-correlation/
 - Aggarwal et al., Generative Engine Optimization, KDD 2024: https://arxiv.org/abs/2311.09735
+- Ahrefs, Schema und AI-Zitate (Mai 2026): https://ahrefs.com/blog/schema-ai-citations/
+- Google, FAQPage-Dokumentation: https://developers.google.com/search/docs/appearance/structured-data/faqpage
+- Google, speakable (Beta): https://developers.google.com/search/docs/appearance/structured-data/speakable
 - Vercel/Merj, AI-Crawler rendern kein JavaScript: https://vercel.com/blog/the-rise-of-the-ai-crawler
 - OpenAI, Bots: https://developers.openai.com/api/docs/bots
 - Anthropic, Crawler: https://support.claude.com/en/articles/8896518
