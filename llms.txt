@@ -1,0 +1,37 @@
+<!--
+Vorlage llms.txt nach dem Vorschlag von llmstxt.org.
+Sinnvoll für Entwickler- und API-Dokumentation, damit Coding-Agenten
+sauberes Markdown finden. Für eine klassische Firmenwebsite nur als
+Messobjekt: anlegen, Abrufe in den Server-Logs zählen, nichts erwarten.
+Die Datei liegt im Stammverzeichnis: https://docs.example.ch/llms.txt
+Alles in eckigen Klammern ersetzen. Diesen Kommentar vor dem
+Veröffentlichen löschen.
+-->
+
+# [Produktname]
+
+> [Ein Satz: was das Produkt ist, für wen, und was diese Dokumentation abdeckt.]
+
+[Optional zwei, drei Sätze mit dem, was ein Agent wissen muss, bevor er die
+Doku liest: aktuelle API-Version, Authentifizierung, wichtige Einschränkungen.]
+
+## Einstieg
+
+- [Schnellstart](https://docs.example.ch/schnellstart.md): Konto, API-Schlüssel, erster Aufruf
+- [Authentifizierung](https://docs.example.ch/auth.md): Tokens, Scopes, Ablauf
+
+## API-Referenz
+
+- [Endpunkte](https://docs.example.ch/api/endpunkte.md): alle Endpunkte mit Parametern und Beispielantworten
+- [Fehlercodes](https://docs.example.ch/api/fehler.md): Codes, Bedeutung, was zu tun ist
+- [Rate Limits](https://docs.example.ch/api/limits.md): Grenzen pro Plan
+
+## Anleitungen
+
+- [Webhooks einrichten](https://docs.example.ch/anleitungen/webhooks.md): Ereignisse, Signaturprüfung, Wiederholungen
+- [Migration von v1 auf v2](https://docs.example.ch/anleitungen/migration.md): was sich geändert hat
+
+## Optional
+
+- [Changelog](https://docs.example.ch/changelog.md): Änderungen nach Version
+- [Firmeninformationen](https://www.example.ch/fakten/): Grounding Page mit den Kernfakten
